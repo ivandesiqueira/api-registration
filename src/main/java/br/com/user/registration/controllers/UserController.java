@@ -42,7 +42,7 @@ public class UserController {
 		return ResponseEntity.ok().body(newobj);
 	}
 
-	@PostMapping(value = "/save")
+	@PostMapping
 	@ResponseBody
 	public ResponseEntity<User> save(@RequestBody User user) {
 		User obj = userService.save(user);
